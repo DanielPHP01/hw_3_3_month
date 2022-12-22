@@ -1,4 +1,4 @@
-package com.example.hw_3_3_month;
+package first_example;
 
 public class Planet {
     String name;
@@ -35,18 +35,35 @@ public class Planet {
         this.life = life;
     }
 
-    int image ;
+    int image;
+    boolean check;
+    int age;
 
-    public Planet(String name, int image, String radius, String life) {
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public boolean isCheck() {
+        return check;
+    }
+
+    public void setCheck(boolean check) {
+        this.check = check;
+    }
+
+    public Planet(String name, int image, String radius, int age) {
         this.name = name;
         this.image = image;
         this.radius = radius;
-        this.life = life;
+        this.age = age;
     }
 
     String radius;
-String life;
-
+    String life;
 
 
 }

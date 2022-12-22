@@ -1,10 +1,12 @@
-package com.example.hw_3_3_month;
+package first_example;
 
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.hw_3_3_month.R;
 
 import java.util.ArrayList;
 

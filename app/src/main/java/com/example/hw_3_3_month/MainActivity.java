@@ -3,15 +3,17 @@ package com.example.hw_3_3_month;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.graphics.Color;
 import android.os.Bundle;
 
 import java.util.ArrayList;
 
+import first_example.Planet;
+import first_example.PlanetsAdapter;
+
 public class MainActivity extends AppCompatActivity {
     RecyclerView recyclerView;
     PlanetsAdapter planetsAdapter;
-    ArrayList<Planet> arrayList;
+    ArrayList<Planet> arrayList = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,13 +26,13 @@ public class MainActivity extends AppCompatActivity {
 
     private void fillOurList() {
         arrayList = new ArrayList<>();
-        arrayList.add(new Planet("Earth", R.mipmap.ic_launcher_foreground,"15","Есть"));
-        arrayList.add(new Planet("Venera",R.mipmap.ic_foreground,"40","Нет"));
-        arrayList.add(new Planet("Neptune",R.mipmap.ic_neptune_foreground,"50","Нет"));
-        arrayList.add(new Planet("Saturn",R.mipmap.ic_saturn_foreground,"50","Нет"));
-        arrayList.add(new Planet("Jupiter",R.mipmap.ic_jupiter_foreground,"1000000000","Нет"));
-        arrayList.add(new Planet("Mars",R.mipmap.ic_mars_foreground,"20000","Нет"));
-        arrayList.add(new Planet("Mercury",R.mipmap.ic_mercury_foreground,"50000","Нет"));
+        arrayList.add(new Planet("Earth", R.mipmap.ic_launcher_foreground,"15",15));
+        arrayList.add(new Planet("Venera",R.mipmap.ic_foreground,"40",40));
+        arrayList.add(new Planet("Neptune",R.mipmap.ic_neptune_foreground,"50",60));
+        arrayList.add(new Planet("Saturn",R.mipmap.ic_saturn_foreground,"50",70));
+        arrayList.add(new Planet("Jupiter",R.mipmap.ic_jupiter_foreground,"1000000000",80));
+        arrayList.add(new Planet("Mars",R.mipmap.ic_mars_foreground,"20000",90));
+        arrayList.add(new Planet("Mercury",R.mipmap.ic_mercury_foreground,"50000",80));
     }
 
     private void initRecycler (){
