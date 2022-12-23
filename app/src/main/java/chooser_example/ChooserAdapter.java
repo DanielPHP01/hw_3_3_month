@@ -32,7 +32,7 @@ public class ChooserAdapter extends RecyclerView.Adapter<ChooserViewHolder> {
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                OnItemClicker.
+                onItemClicker.onClicker(holder.getAdapterPosition());
             }
         });
     }

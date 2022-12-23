@@ -3,6 +3,7 @@ package com.example.hw_3_3_month;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.example.hw_3_3_month.databinding.ActivityChooserBinding;
@@ -42,7 +43,14 @@ public class ChooserActivity extends AppCompatActivity implements OnItemClicker 
 
 
     @Override
-    public void onClicker(int adapterPosition) {
-
+    public void onClicker(int position) {
+        Intent intent = null;
+        if (position == 0) {
+            intent = new Intent(ChooserActivity.this,MainActivity.class);
+        } else if (position == 1){
+            intent = new Intent(ChooserActivity.this,MainActivity2.class);
+        }
+        intent.putExtra("key", (CharSequence) arrayList.get(position));
+        startActivity(intent);
     }
 }

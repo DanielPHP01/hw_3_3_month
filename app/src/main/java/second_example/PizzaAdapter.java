@@ -17,7 +17,7 @@ public class PizzaAdapter extends RecyclerView.Adapter<PizzaViewHolder> {
     OnItemClick onItemClick;
 
 
-    public PizzaAdapter(ArrayList<Pizza> arrayList, MainActivity2 mainActivity2) {
+    public PizzaAdapter(ArrayList<Pizza> arrayList,OnItemClick onItemClick) {
         this.arrayList = arrayList;
         this.onItemClick = onItemClick;
     }
@@ -34,7 +34,7 @@ public class PizzaAdapter extends RecyclerView.Adapter<PizzaViewHolder> {
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                OnItemClick.onClick(holder.getAdapterPosition());
+                onItemClick.onClick(holder.getAdapterPosition());
             }
         });
 

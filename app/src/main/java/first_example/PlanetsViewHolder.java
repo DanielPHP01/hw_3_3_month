@@ -19,6 +19,7 @@ public class PlanetsViewHolder extends RecyclerView.ViewHolder {
     TextView booleanView;
     TextView check;
     TextView age;
+    TextView life;
 
     public PlanetsViewHolder(@NonNull View itemView) {
         super(itemView);
@@ -26,7 +27,7 @@ public class PlanetsViewHolder extends RecyclerView.ViewHolder {
         imageViewPlanets = itemView.findViewById(R.id.image_main);
         radiusView = itemView.findViewById(R.id.name_text_view_center_for_radius);
         //check = itemView.findViewById(R.id.name_text_view_down_for_boolean);
-        age = itemView.findViewById(R.id.name_text_view_down_for_boolean);
+        life = itemView.findViewById(R.id.name_text_view_down_for_boolean);
 
     }
 
@@ -34,7 +35,7 @@ public class PlanetsViewHolder extends RecyclerView.ViewHolder {
         textViewPlanets.setText(planet.getName());
         imageViewPlanets.setImageResource(planet.getImage());
         radiusView.setText(planet.getRadius());
-        age.setText(planet.getAge());
+        life.setText(planet.getLife());
 
 
 

@@ -1,7 +1,5 @@
 package second_example;
 
 public interface OnItemClick {
-    void onClick(int position) {
-
-    }
+    void onClick(int position);
 }

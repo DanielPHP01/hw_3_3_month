@@ -55,11 +55,11 @@ public class Planet {
         this.check = check;
     }
 
-    public Planet(String name, int image, String radius, int age) {
+    public Planet(String name, int image, String radius, String life) {
         this.name = name;
         this.image = image;
         this.radius = radius;
-        this.age = age;
+        this.life = life;
     }
 
     String radius;
