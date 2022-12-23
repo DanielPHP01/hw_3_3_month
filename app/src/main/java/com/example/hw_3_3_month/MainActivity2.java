@@ -17,7 +17,6 @@ import second_example.PizzaAdapter;
 public class MainActivity2 extends AppCompatActivity implements OnItemClick {
     ActivityMain2Binding activityMain2Binding;
     PizzaAdapter pizzaAdapter;
-    RecyclerView recyclerView;
     ArrayList<Pizza> arrayList = new ArrayList<>();
 
     @Override
@@ -31,13 +30,12 @@ public class MainActivity2 extends AppCompatActivity implements OnItemClick {
 
     private void initRecycler() {
         pizzaAdapter = new PizzaAdapter(arrayList,this);
-        recyclerView.setAdapter(pizzaAdapter);
         activityMain2Binding.recyclerViewPizza.setAdapter(pizzaAdapter);
     }
 
     private void fillOurList() {
-        arrayList.add(new Pizza("Маргарита", "400 Сом", "Очень зороошая пицца", R.drawable.ic_launcher_foreground));
-        arrayList.add(new Pizza("Маргарита", "400 Сом", "Очень зороошая пицца", R.drawable.ic_launcher_foreground));
+        arrayList.add(new Pizza("Маргарита", "400 Сом", "Пицца Маргарита. Пицца-соус, сыр моцарелла, орегано, помидоры, базилик.", R.mipmap.ic_margherita));
+        arrayList.add(new Pizza("Мексиканка", "600 Сом", "Пицца Мексиканка Мега сытная пицца с ароматным, пряным, мясным рагу Чили кон карне и сливочным соусом Крема де сальса,фасолью", R.mipmap.ic_mexcikan));
         arrayList.add(new Pizza("Маргарита", "400 Сом", "Очень зороошая пицца", R.drawable.ic_launcher_foreground));
         arrayList.add(new Pizza("Маргарита", "400 Сом", "Очень зороошая пицца", R.drawable.ic_launcher_foreground));
         arrayList.add(new Pizza("Маргарита", "400 Сом", "Очень зороошая пицца", R.drawable.ic_launcher_foreground));

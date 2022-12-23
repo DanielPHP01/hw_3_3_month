@@ -32,7 +32,6 @@ public class ChooserActivity extends AppCompatActivity implements OnItemClicker 
 
     private void initRecycler() {
         chooserAdapter = new ChooserAdapter(arrayList,this);
-        recyclerView.setAdapter(chooserAdapter);
         activityChooserBinding.recyclerViewChooser.setAdapter(chooserAdapter);
     }
 
@@ -50,7 +49,6 @@ public class ChooserActivity extends AppCompatActivity implements OnItemClicker 
         } else if (position == 1){
             intent = new Intent(ChooserActivity.this,MainActivity2.class);
         }
-        intent.putExtra("key", (CharSequence) arrayList.get(position));
         startActivity(intent);
     }
 }

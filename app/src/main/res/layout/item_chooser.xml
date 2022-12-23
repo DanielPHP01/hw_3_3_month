@@ -16,26 +16,27 @@
 
         <ImageView
             android:id="@+id/image_app"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="20dp"
-            android:layout_marginVertical="10dp"
-            android:contentDescriptionV="@string/hw_3_3_month"
-            android:src="@drawable/ic_launcher_background"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/ic_saturn_background"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBaseline_toBottomOf="@id/text_app_name"/>
 
         <TextView
             android:id="@+id/text_app_name"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="80dp"
             android:layout_marginHorizontal="10dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginVertical="400dp"
             android:background="@color/white"
             android:textColor="@color/black"
+            android:textSize="50sp"
+            android:textAlignment="center"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/image_app"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="Name" />
 
