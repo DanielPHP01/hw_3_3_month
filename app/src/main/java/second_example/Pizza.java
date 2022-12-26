@@ -1,6 +1,8 @@
 package second_example;
 
-public class Pizza {
+import java.io.Serializable;
+
+public class Pizza implements Serializable {
     String name;
     String price;
     String description;

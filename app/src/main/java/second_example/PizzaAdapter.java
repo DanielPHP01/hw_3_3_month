@@ -1,5 +1,6 @@
 package second_example;
 
+import android.annotation.SuppressLint;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,12 +30,12 @@ public class PizzaAdapter extends RecyclerView.Adapter<PizzaViewHolder> {
     }
 
     @Override
-    public void onBindViewHolder(@NonNull PizzaViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull PizzaViewHolder holder, @SuppressLint("RecyclerView") int position) {
         holder.OnBind(arrayList.get(position));
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                onItemClick.onClick(holder.getAdapterPosition());
+                onItemClick.onClick(arrayList.get(position));
             }
         });
 

@@ -1,6 +1,6 @@
 package chooser_example;
 
-public class Chooser {
+public class Chooser  {
     String name;
     int image;
 
