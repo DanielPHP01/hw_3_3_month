@@ -1,6 +1,4 @@
-package second_example;
-
-import android.view.View;
+package com.example.hw_3_3_month.pizza;
 
 import androidx.recyclerview.widget.RecyclerView;
 

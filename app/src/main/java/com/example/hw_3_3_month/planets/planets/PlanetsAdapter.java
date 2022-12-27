@@ -1,4 +1,4 @@
-package first_example;
+package com.example.hw_3_3_month.planets.planets;
 
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
@@ -15,7 +15,6 @@ public class PlanetsAdapter extends RecyclerView.Adapter<PlanetsViewHolder> {
     public PlanetsAdapter(ArrayList<Planet> arrayList) {
         this.arrayListName = arrayList;
     }
-
 
     @Override
     public PlanetsViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {

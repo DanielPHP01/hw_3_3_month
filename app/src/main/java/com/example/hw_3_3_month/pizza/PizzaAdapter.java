@@ -1,4 +1,4 @@
-package second_example;
+package com.example.hw_3_3_month.pizza;
 
 import android.annotation.SuppressLint;
 import android.view.LayoutInflater;
@@ -8,7 +8,6 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.hw_3_3_month.MainActivity2;
 import com.example.hw_3_3_month.databinding.ItemPizzaBinding;
 
 import java.util.ArrayList;
@@ -17,8 +16,7 @@ public class PizzaAdapter extends RecyclerView.Adapter<PizzaViewHolder> {
     ArrayList<Pizza> arrayList;
     OnItemClick onItemClick;
 
-
-    public PizzaAdapter(ArrayList<Pizza> arrayList,OnItemClick onItemClick) {
+    public PizzaAdapter(ArrayList<Pizza> arrayList, OnItemClick onItemClick) {
         this.arrayList = arrayList;
         this.onItemClick = onItemClick;
     }
@@ -38,7 +36,6 @@ public class PizzaAdapter extends RecyclerView.Adapter<PizzaViewHolder> {
                 onItemClick.onClick(arrayList.get(position));
             }
         });
-
     }
 
     @Override

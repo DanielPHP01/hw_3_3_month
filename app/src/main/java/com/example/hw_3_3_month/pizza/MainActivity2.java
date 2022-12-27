@@ -1,21 +1,14 @@
-package com.example.hw_3_3_month;
+package com.example.hw_3_3_month.pizza;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Parcelable;
 
+import com.example.hw_3_3_month.R;
 import com.example.hw_3_3_month.databinding.ActivityMain2Binding;
 
-import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.List;
-
-import second_example.OnItemClick;
-import second_example.Pizza;
-import second_example.PizzaAdapter;
 
 public class MainActivity2 extends AppCompatActivity implements OnItemClick {
     ActivityMain2Binding activityMain2Binding;
@@ -33,7 +26,7 @@ public class MainActivity2 extends AppCompatActivity implements OnItemClick {
     }
 
     private void initRecycler() {
-        pizzaAdapter = new PizzaAdapter(arrayList,this);
+        pizzaAdapter = new PizzaAdapter(arrayList, this);
         activityMain2Binding.recyclerViewPizza.setAdapter(pizzaAdapter);
     }
 
@@ -48,8 +41,7 @@ public class MainActivity2 extends AppCompatActivity implements OnItemClick {
 
     @Override
     public void onClick(Pizza pizza) {
-
-        Intent intent = new Intent(this,ActivityPizza.class);
+        Intent intent = new Intent(this, ActivityPizza.class);
         intent.putExtra("key", pizza.getName());
         intent.putExtra("key1", pizza.getDescription());
         intent.putExtra("key2", pizza.getPrice());

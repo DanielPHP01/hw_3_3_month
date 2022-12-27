@@ -1,4 +1,4 @@
-package chooser_example;
+package com.example.hw_3_3_month.chooser_example;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -23,7 +23,7 @@ public class ChooserAdapter extends RecyclerView.Adapter<ChooserViewHolder> {
     @NonNull
     @Override
     public ChooserViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new ChooserViewHolder(ItemChooserBinding.inflate(LayoutInflater.from(parent.getContext()),parent,false));
+        return new ChooserViewHolder(ItemChooserBinding.inflate(LayoutInflater.from(parent.getContext()), parent, false));
     }
 
     @Override

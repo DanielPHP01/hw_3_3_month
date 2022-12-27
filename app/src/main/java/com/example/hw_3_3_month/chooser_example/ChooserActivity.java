@@ -1,15 +1,17 @@
-package com.example.hw_3_3_month;
+package com.example.hw_3_3_month.chooser_example;
 
 import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.hw_3_3_month.R;
 import com.example.hw_3_3_month.databinding.ActivityChooserBinding;
+import com.example.hw_3_3_month.pizza.MainActivity2;
+import com.example.hw_3_3_month.planets.planets.MainActivity;
+
 import java.util.ArrayList;
-import chooser_example.Chooser;
-import chooser_example.ChooserAdapter;
-import chooser_example.OnItemClicker;
+
 
 public class ChooserActivity extends AppCompatActivity implements OnItemClicker {
     ActivityChooserBinding activityChooserBinding;
@@ -47,7 +49,7 @@ public class ChooserActivity extends AppCompatActivity implements OnItemClicker 
         } else if (position == 1) {
             intent = new Intent(ChooserActivity.this, MainActivity2.class);
         } else {
-            intent = new Intent(ChooserActivity.this,  MainActivity.class);
+            intent = new Intent(ChooserActivity.this, MainActivity.class);
         }
         startActivity(intent);
     }

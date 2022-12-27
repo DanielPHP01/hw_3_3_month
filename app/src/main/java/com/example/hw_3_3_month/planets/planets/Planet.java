@@ -1,4 +1,4 @@
-package first_example;
+package com.example.hw_3_3_month.planets.planets;
 
 public class Planet {
     String name;
@@ -64,6 +64,4 @@ public class Planet {
 
     String radius;
     String life;
-
-
 }

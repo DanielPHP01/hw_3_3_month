@@ -1,6 +1,5 @@
-package chooser_example;
-
-public class Chooser  {
+package com.example.hw_3_3_month.chooser_example;
+public class Chooser {
     String name;
     int image;
 

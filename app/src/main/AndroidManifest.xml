@@ -13,7 +13,7 @@
         android:theme="@style/Theme.Hw_3_3_month"
         tools:targetApi="31">
         <activity
-            android:name=".ChooserActivity"
+            android:name=".chooser_example.ChooserActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,21 +25,21 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".ActivityPizza"
+            android:name=".pizza.ActivityPizza"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".MainActivity2"
+            android:name=".pizza.MainActivity2"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".planets.planets.MainActivity"
             android:exported="false">
 
 

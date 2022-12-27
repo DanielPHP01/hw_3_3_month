@@ -1,6 +1,4 @@
-package chooser_example;
-
-import android.view.View;
+package com.example.hw_3_3_month.chooser_example;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;

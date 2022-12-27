@@ -1,4 +1,4 @@
-package second_example;
+package com.example.hw_3_3_month.pizza;
 
 import java.io.Serializable;
 
