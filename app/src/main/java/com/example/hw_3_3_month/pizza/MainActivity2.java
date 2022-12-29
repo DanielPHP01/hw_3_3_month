@@ -23,6 +23,7 @@ public class MainActivity2 extends AppCompatActivity implements OnItemClick {
         setContentView(activityMain2Binding.getRoot());
         fillOurList();
         initRecycler();
+
     }
 
     private void initRecycler() {
@@ -42,10 +43,14 @@ public class MainActivity2 extends AppCompatActivity implements OnItemClick {
     @Override
     public void onClick(Pizza pizza) {
         Intent intent = new Intent(this, ActivityPizza.class);
-        intent.putExtra("key", pizza.getName());
-        intent.putExtra("key1", pizza.getDescription());
-        intent.putExtra("key2", pizza.getPrice());
-        intent.putExtra("key3", pizza.getImagePizza());
+        intent.putExtra("name", pizza.getName());
+        intent.putExtra("desc", pizza.getDescription());
+        intent.putExtra("price", pizza.getPrice());
+        intent.putExtra("image", pizza.getImagePizza());
+        intent.putExtra("pizza",pizza);
         startActivity(intent);
     }
+
+
+
 }
