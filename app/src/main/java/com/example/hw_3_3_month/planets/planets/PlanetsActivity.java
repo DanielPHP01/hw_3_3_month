@@ -9,7 +9,7 @@ import com.example.hw_3_3_month.R;
 
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity {
+public class PlanetsActivity extends AppCompatActivity {
     RecyclerView recyclerView;
     PlanetsAdapter planetsAdapter;
     ArrayList<Planet> arrayList = new ArrayList<>();

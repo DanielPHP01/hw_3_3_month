@@ -1,16 +1,16 @@
 package com.example.hw_3_3_month.pizza;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.hw_3_3_month.R;
 import com.example.hw_3_3_month.databinding.ActivityMain2Binding;
 
 import java.util.ArrayList;
 
-public class MainActivity2 extends AppCompatActivity implements OnItemClick {
+public class MainPizzaActivity extends AppCompatActivity implements OnItemClick {
     ActivityMain2Binding activityMain2Binding;
     PizzaAdapter pizzaAdapter;
     ArrayList<Pizza> arrayList = new ArrayList<>();

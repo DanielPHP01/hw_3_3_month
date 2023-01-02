@@ -13,7 +13,8 @@ import com.example.hw_3_3_month.databinding.ItemPizzaBinding;
 import java.util.ArrayList;
 
 public class PizzaAdapter extends RecyclerView.Adapter<PizzaViewHolder> {
-    ArrayList<Pizza> arrayList;
+    ArrayList<Pizza> arrayList = new ArrayList<>();
+    ArrayList<Drinks> drinksArrayList = new ArrayList<>();
     OnItemClick onItemClick;
 
     public PizzaAdapter(ArrayList<Pizza> arrayList, OnItemClick onItemClick) {
@@ -21,10 +22,16 @@ public class PizzaAdapter extends RecyclerView.Adapter<PizzaViewHolder> {
         this.onItemClick = onItemClick;
     }
 
+    public PizzaAdapter(ArrayList<Drinks> drinksArrayList, DrinksFragment onItemClick) {
+        this.drinksArrayList = drinksArrayList;
+        this.onItemClick = onItemClick;
+
+    }
+
     @NonNull
     @Override
     public PizzaViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new PizzaViewHolder(ItemPizzaBinding.inflate(LayoutInflater.from(parent.getContext()), parent, false));
+        return new PizzaViewHolder(ItemPizzaBinding.inflate(LayoutInflater.from(parent.getContext()),parent,false));
     }
 
     @Override

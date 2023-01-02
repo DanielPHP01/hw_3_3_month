@@ -7,8 +7,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.hw_3_3_month.R;
 import com.example.hw_3_3_month.databinding.ActivityChooserBinding;
-import com.example.hw_3_3_month.pizza.MainActivity2;
-import com.example.hw_3_3_month.planets.planets.MainActivity;
+import com.example.hw_3_3_month.pizza.MainPizzaActivity;
+import com.example.hw_3_3_month.planets.planets.PlanetsActivity;
 
 import java.util.ArrayList;
 
@@ -45,11 +45,11 @@ public class ChooserActivity extends AppCompatActivity implements OnItemClicker 
     public void chooseIntent(int position) {
         Intent intent;
         if (position == 0) {
-            intent = new Intent(ChooserActivity.this, MainActivity.class);
+            intent = new Intent(ChooserActivity.this, PlanetsActivity.class);
         } else if (position == 1) {
-            intent = new Intent(ChooserActivity.this, MainActivity2.class);
+            intent = new Intent(ChooserActivity.this, MainPizzaActivity.class);
         } else {
-            intent = new Intent(ChooserActivity.this, MainActivity.class);
+            intent = new Intent(ChooserActivity.this, PlanetsActivity.class);
         }
         startActivity(intent);
     }

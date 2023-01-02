@@ -40,14 +40,14 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".pizza.MainActivity2"
+            android:name=".pizza.MainPizzaActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".planets.planets.MainActivity"
+            android:name=".planets.planets.PlanetsActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

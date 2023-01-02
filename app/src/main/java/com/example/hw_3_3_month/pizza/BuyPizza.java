@@ -13,6 +13,8 @@ public class BuyPizza extends AppCompatActivity {
 
     Pizza pizza;
 
+    Drinks drinks;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,9 +28,11 @@ public class BuyPizza extends AppCompatActivity {
         pizza = (Pizza) getIntent().getSerializableExtra("pizza");
 
         PizzaFragment pizzaFragment = new PizzaFragment();
+        DrinksFragment drinksFragment = new DrinksFragment();
         Bundle bundle = new Bundle();
         bundle.putSerializable("pizza", pizza);
         pizzaFragment.setArguments(bundle);
         getSupportFragmentManager().beginTransaction().replace(R.id.container_fragments, pizzaFragment).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.container_fragments_drinks,drinksFragment).commit();
     }
 }

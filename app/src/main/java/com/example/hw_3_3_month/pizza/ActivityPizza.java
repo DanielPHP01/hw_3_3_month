@@ -44,6 +44,11 @@ public class ActivityPizza extends AppCompatActivity {
         binding.namePizza.setText(title);
         binding.descriptionPizza.setText(desc);
         binding.pizzaImage.setImageResource(img);
+        System.out.println("Happy New Year 2023");
     }
+
+
+    // С новым годом!!!
+
 
 }
